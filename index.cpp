@@ -4,6 +4,7 @@
 using namespace std;
 int main(){
     int arr1[6];
+    int searchKey;
     bool flag=true;
     cout<<"Enter the values for array ordered :"<<endl;
     for(int i = 0;i<6;i++){
@@ -11,9 +12,8 @@ int main(){
         cin>>arr1[i];
         cout<<endl;
     }
-    for(int i = 0;i<6;i++){
-        cout<<arr1[i]<<" ";
-    }
+    cout<<"Enter the search key = ";
+    cin>>searchKey;
     cout<<endl;
     cout << "Press Enter to exit...";
     cin.ignore();
