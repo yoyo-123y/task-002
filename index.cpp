@@ -3,4 +3,7 @@
 
 using namespace std;
 int main(){
+    cout << "Press Enter to exit...";
+    cin.ignore();
+    cin.get();
 }
