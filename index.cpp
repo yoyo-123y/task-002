@@ -7,5 +7,10 @@ int main(){
     cout<<"Enter the phrase = ";
     getline(cin,phrase);
     cout<<endl;
-    cout<<phrase;
+    int position = phrase.find("dog");
+    while(position!= string::npos){
+        phrase.replace(position,3,"cat");
+        position = phrase.find("dog");
+    }
+    cout<<"Edited phrase = "<<phrase;
 }
